@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/baghedoudhicham/particular/schema/project-dna.schema.json",
+  "title": "Particular Project DNA",
+  "description": "Portable evidence and design-decision artifact for Particular.",
+  "type": "object",
+  "required": ["project", "truth", "evidence", "direction"],
+  "properties": {
+    "project": {
+      "type": "object",
+      "required": ["name", "mode"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "mode": {"enum": ["discover", "dna", "strategize", "concept", "design", "build", "redesign", "critique", "polish", "contest", "scroll"]},
+        "audiences": {"type": "array", "items": {"type": "string"}},
+        "primaryGoal": {"type": "string"},
+        "primaryConversion": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "truth": {
+      "type": "object",
+      "properties": {
+        "locked": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}},
+        "verified": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}},
+        "clientSupplied": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}},
+        "interpretable": {"type": "array", "items": {"type": "string"}},
+        "undefined": {"type": "array", "items": {"type": "string"}},
+        "proposed": {"type": "array", "items": {"type": "string"}},
+        "placeholders": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "brandDNA": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}},
+        "referenceDNA": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}},
+        "clientDNA": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}},
+        "categoryDNA": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}},
+        "projectDNA": {"type": "array", "items": {"$ref": "#/$defs/evidenceItem"}},
+        "antiDNA": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "direction": {
+      "type": "object",
+      "properties": {
+        "visualCategory": {"type": "string"},
+        "thesis": {"type": "string"},
+        "designIdea": {"type": "string"},
+        "brandDevice": {"type": "string"},
+        "compositionIdea": {"type": "string"},
+        "contentIdea": {"type": "string"},
+        "interactionIdea": {"type": "string"},
+        "calibration": {
+          "type": "object",
+          "additionalProperties": {"type": "integer", "minimum": 1, "maximum": 10}
+        }
+      },
+      "additionalProperties": true
+    },
+    "decisions": {"type": "array", "items": {"$ref": "#/$defs/decision"}},
+    "risks": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "evidenceItem": {
+      "type": "object",
+      "required": ["claim"],
+      "properties": {
+        "claim": {"type": "string", "minLength": 1},
+        "source": {"type": "string"},
+        "authority": {"type": "integer", "minimum": 1, "maximum": 5},
+        "relevance": {"type": "integer", "minimum": 1, "maximum": 5},
+        "preferenceSignal": {"type": "integer", "minimum": 1, "maximum": 5}
+      },
+      "additionalProperties": true
+    },
+    "decision": {
+      "type": "object",
+      "required": ["decision", "reason"],
+      "properties": {
+        "decision": {"type": "string"},
+        "reason": {"type": "string"},
+        "evidence": {"type": "array", "items": {"type": "string"}},
+        "status": {"enum": ["locked", "active", "proposed", "rejected", "superseded"]}
+      },
+      "additionalProperties": false
+    }
+  }
+}
