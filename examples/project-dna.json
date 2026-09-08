@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": {
+    "name": "Example Project",
+    "visualCategory": "",
+    "businessGoal": "",
+    "primaryConversion": ""
+  },
+  "truth": {
+    "lockedFacts": [],
+    "verified": [],
+    "clientSupplied": [],
+    "interpretable": [],
+    "undefined": [],
+    "proposed": [],
+    "placeholders": []
+  },
+  "preference": {
+    "selected": [],
+    "highRated": [],
+    "rejected": [],
+    "feedback": []
+  },
+  "dna": {
+    "brand": {},
+    "reference": {},
+    "client": {},
+    "category": {},
+    "project": {},
+    "anti": {}
+  },
+  "calibration": {
+    "brandExpression": null,
+    "visualNovelty": null,
+    "layoutVariance": null,
+    "visualDensity": null,
+    "informationDensity": null,
+    "typographicExpression": null,
+    "imageDominance": null,
+    "editoriality": null,
+    "technicality": null,
+    "materiality": null,
+    "ornamentation": null,
+    "ctaProminence": null,
+    "interactionComplexity": null,
+    "motionIntensity": null,
+    "immersiveIntensity": null
+  },
+  "system": {
+    "color": {},
+    "typography": {},
+    "grid": {},
+    "spacing": {},
+    "shape": {},
+    "imagery": {},
+    "iconography": {},
+    "composition": {},
+    "motion": {},
+    "interaction": {},
+    "responsive": {},
+    "accessibility": {},
+    "performance": {},
+    "search": {}
+  }
+}
