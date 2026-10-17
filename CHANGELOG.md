@@ -2,6 +2,26 @@
 
 All notable changes to Particular are documented here.
 
+## 0.3.0 — in development
+
+Particular becomes portable across design generators, coding agents, and design tools without duplicating its core methodology.
+
+### Added
+
+- root `README.md` with positioning, quick start, architecture, workflows, examples, and contribution paths
+- environment adapters for ChatGPT/Codex, Claude/Claude Code, Google AI Studio/Gemini, Stitch, Cursor, Lovable, and Figma
+- portable `PROJECT-DNA.md`, `DESIGN.md`, and `IMPLEMENTATION.md` templates
+- cross-tool handoff example showing how design intent survives exploration → refinement → implementation
+- clearer separation between reusable skill behavior, project truth, visual-system truth, implementation constraints, and tool-specific instructions
+
+### Improved
+
+- repository visibility and onboarding
+- cross-tool design-to-code continuity
+- progressive context loading instead of duplicating large prompts
+- guidance against tool-default visual drift
+- examples focused on structural design decisions rather than style presets
+
 ## 0.2.0 — in development
 
 Particular becomes a directly loadable, testable agent skill rather than only a design methodology.
@@ -15,15 +35,6 @@ Particular becomes a directly loadable, testable agent skill rather than only a 
 - first synthetic benchmark covering conflicts between written aesthetic language and demonstrated client preference
 - stronger action/analysis behavior, inspection requirements, and anti-overengineering guidance
 - clearer definition of done for design and implementation work
-
-### Planned before 0.2.0 stable
-
-- complete five-case benchmark set
-- validated example Project DNA against the JSON Schema
-- concise installation/adapters for major agent environments
-- before/after benchmark documentation
-- skill validation checklist
-- repository metadata and distribution-ready documentation
 
 ## 0.1.0 — 2026-09-08
 
