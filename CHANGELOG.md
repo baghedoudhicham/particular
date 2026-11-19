@@ -8,6 +8,7 @@ Particular becomes portable across design generators, coding agents, and design 
 
 ### Added
 
+- `modules/atomic-review.md`: senior design audit, evidence-led atomic polish passes, visual diff/rollback contracts, restrained effects budgets, lower-page craft, Figma and code release gates
 - root `README.md` with positioning, quick start, architecture, workflows, examples, and contribution paths
 - environment adapters for ChatGPT/Codex, Claude/Claude Code, Google AI Studio/Gemini, Stitch, Cursor, Lovable, and Figma
 - portable `PROJECT-DNA.md`, `DESIGN.md`, and `IMPLEMENTATION.md` templates
