@@ -12,6 +12,8 @@ Identify and preserve:
 - successful imagery
 - successful interaction patterns
 
+For multi-pass or senior-level review requests, follow [Atomic Design Review & Polish](atomic-review.md) before editing. Use its pass contract, explicit freeze list, actual-size visual comparisons, effects budget, and release gates. Keep concept creation separate from polish.
+
 ## Polish targets
 
 Refine:
