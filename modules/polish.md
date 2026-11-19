@@ -32,4 +32,4 @@ Refine:
 
 Do not turn polish into concept generation.
 
-If the architecture is right, improve resolution locally.
+If the architecture is right, improve resolution locally.\n\n## Atomic polish protocol\n\nFor multi-pass polish, load [Atomic Design Refinement](atomic-refinement.md) rather than editing globally. Start with evidence and a frozen baseline, run one bounded dimension at a time, render and compare after every pass, and retain or revert based on actual checks. Record the pass in [`templates/atomic-refinement-log.md`](../templates/atomic-refinement-log.md). A polished screenshot is not proof of working interactions or a successful build.
