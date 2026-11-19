@@ -193,6 +193,8 @@ Classify feedback as fact, content, brand, preference, style, composition, UX, i
 
 For redesigns: audit → identify strengths → freeze what works → rank problems → fix hierarchy → composition → typography → UX → interaction → polish.
 
+For a **senior design review, several refinement passes, or Figma-to-code release QA**, use [`modules/atomic-review.md`](modules/atomic-review.md): capture a source-backed baseline, diagnose at actual size, run bounded reversible passes, inspect the lower 70%, and record KEEP / ADJUST / REVERT after each pass.
+
 ## 19. Learn from actual decisions
 
 When client ratings, rejections, selections, or winners become available, update the preference model. Compare what was chosen with what was built, what the brief appeared to imply, what the choice reveals, and which lesson is project-specific versus generalizable. Do not rationalize a miss or overfit one outcome.
