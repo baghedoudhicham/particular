@@ -193,6 +193,8 @@ Classify feedback as fact, content, brand, preference, style, composition, UX, i
 
 For redesigns: audit → identify strengths → freeze what works → rank problems → fix hierarchy → composition → typography → UX → interaction → polish.
 
+When a design needs multiple senior-level refinement passes, use the explicit **atomic critique → bounded edit → rendered verification** protocol in [`modules/atomic-refinement.md`](modules/atomic-refinement.md). Preserve a reversible baseline; change one design dimension at a time; identify scope, frozen decisions, acceptance and rollback; and distinguish Figma visual checks from browser/build/accessibility verification.
+
 ## 19. Learn from actual decisions
 
 When client ratings, rejections, selections, or winners become available, update the preference model. Compare what was chosen with what was built, what the brief appeared to imply, what the choice reveals, and which lesson is project-specific versus generalizable. Do not rationalize a miss or overfit one outcome.

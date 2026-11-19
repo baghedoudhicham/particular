@@ -45,3 +45,9 @@ Do not defend the design while running critique.
 ## Screenshot-deception check
 
 Inspect at realistic size on desktop, tablet, and mobile. Full-page thumbnails hide weak body text, bad controls, poor contrast, broken spacing, and density problems.
+
+## Evidence for iterative polish
+
+For each atomic change, record the baseline, hypothesis, scope, screenshot or node reference, change, result and rollback using [`templates/atomic-refinement-log.md`](../templates/atomic-refinement-log.md). See [`modules/atomic-refinement.md`](../modules/atomic-refinement.md).
+
+Treat these as distinct statuses: **visual QA**, **responsive QA**, **functional QA**, **build QA** and **client approval**. One passing status does not imply another. Prefer readable-size screenshots over compressed full-page thumbnails. Reject improvements that degrade critical content, contrast, source truth or user task completion.
