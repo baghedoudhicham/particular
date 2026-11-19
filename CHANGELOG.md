@@ -8,6 +8,9 @@ Particular becomes portable across design generators, coding agents, and design 
 
 ### Added
 
+- evidence-led atomic refinement protocol with immutable baselines, dimension-scoped changes, rollback and per-pass rendered QA
+- reusable atomic refinement log for Figma, browser and implementation review
+
 - root `README.md` with positioning, quick start, architecture, workflows, examples, and contribution paths
 - environment adapters for ChatGPT/Codex, Claude/Claude Code, Google AI Studio/Gemini, Stitch, Cursor, Lovable, and Figma
 - portable `PROJECT-DNA.md`, `DESIGN.md`, and `IMPLEMENTATION.md` templates
