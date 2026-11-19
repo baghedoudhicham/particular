@@ -191,7 +191,7 @@ Never approve a design only from a zoomed-out full-page screenshot. Inspect repr
 
 Classify feedback as fact, content, brand, preference, style, composition, UX, interaction, responsive, accessibility, performance, or implementation. Classify scope as micro, local, section, or systemic. Make the smallest intervention capable of solving the problem. Freeze successful sections. Regenerate globally only when the strategy itself is wrong.
 
-For redesigns: audit → identify strengths → freeze what works → rank problems → fix hierarchy → composition → typography → UX → interaction → polish.
+For redesigns: audit → identify strengths → freeze what works → rank problems → fix hierarchy → composition → typography → UX → interaction → polish.\n\nWhen a design needs multiple senior-level refinement passes, use the explicit **atomic critique → bounded edit → rendered verification** protocol in [`modules/atomic-refinement.md`](modules/atomic-refinement.md). Preserve a reversible baseline; change one design dimension at a time; identify scope, frozen decisions, acceptance and rollback; and distinguish Figma visual checks from browser/build/accessibility verification.
 
 ## 19. Learn from actual decisions
 
