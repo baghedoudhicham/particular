@@ -24,6 +24,8 @@ Each critic returns:
 - 1 thing to refine
 - 1 risk
 
+Use [Atomic Design Review & Polish](atomic-review.md) when the critique will lead to edits. Rank material findings by consequence and severity, then verify each small intervention independently rather than redesigning everything at once.
+
 ## Gates
 
 Check factual accuracy, client desirability, category fit, brand specificity, IA, content, composition, type, imagery, interaction, functional UX, responsive behavior, accessibility, performance, search/discoverability, implementation, AI-slop, category-slop, transplant test, and realistic-size inspection.
